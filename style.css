@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: white;
+}
+@font-face {
+    font-family: 'milharal';
+    src: url(fonts/Plante.ttf);
+}
+
+header h2{
+    font-family: milharal;
+    color: rgb(9, 56, 9);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra cinza */
+    
+}
+header{
+    border-bottom: solid 3px rgb(75, 163, 102);
+    background:
+    linear-gradient(rgba(255, 251, 20, 0.781), rgba(130, 204, 33, 0.808)),
+    url('img/headerIMG.png');
+    background-size: cover;
+    border-end-end-radius: 50px;
+    width: 95%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#icon-search{
+    font-size: 30px;
+}
+
+.search-all{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+    width: 60%;
+}
+a{
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+a:hover{
+    color: rgb(224, 210, 5);
+}
+
+#search{
+    border-end-end-radius: 25px;
+    border-top-right-radius: 25px;
+    outline: none;
+    border: solid 1px green;
+    width: 50%;
+}
+
+#search:hover{
+    size: 0.5;
+}
+
+#acount{
+    font-size: 40px;
+    margin: 10px;
+}
+
+#error{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Move o elemento para o centro */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+main p{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#acount:hover{
+    cursor: pointer;
+}
